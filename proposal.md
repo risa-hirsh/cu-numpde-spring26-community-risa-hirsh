@@ -1,30 +1,29 @@
 # Community Software Analysis Proposal
 Please edit this file and push to your repository.
 
-## Software: *NAME_OF_PACKAGE_HERE*
+## Software: *FEniCS/Dolfinx*
 
-*Write a paragraph describing what the software does and who its
-primary audience is.*
+FEniCS is an open-source platform for solving partial differential equations (PDEs) using the finite element method (not finite difference). It allows users to quickly translate mathematical models into efficient computational code. DOLFINx is the modern interface of FEniCS, combining a user-friendly Python front end with a high-performance C++ backend. It integrates with libraries like PETSc for scalable linear algebra and is widely used in both research and large-scale scientific computing applications. The primary audience consists of researchers, graduate students, and engineers in fields such as computational science, applied mathematics, and engineering, particularly those requiring flexible, high-performance simulation tools.
 
 ### Stats
 
 | Description | Your answer |
 |---------|-----------|
-| Repository URL |    |
-| Main/documentation website |    |
-| Year project was started |   |
-| Number of contributors in the past year | `git shortlog -se --since=2025-01-01` may be useful |
-| Number of contributors in the lifetime of the project |   |
-| Number of distinct affiliations | 1, 2-5, 5-10, >10 |
-| Where do development discussions take place? | e.g., GitHub/GitLab issues, mailing list, Slack, etc.  |
-| Typical number of emails/comments per week? |   |
-| Typical number of commits per week? |  |
-| Typical commit size | `git log --shortstat` may be useful |
-| How does the project accept contributions? | e.g., pull requests, patches on mailing lists   |
-| Does the project have an automated test suite? | yes/no |
-| Does the project use continuous integration? | yes/no |
-| Are any legal/licensing steps required to contribute? | no or explain below |
-| Does the project have a policy on LLM use/disclosure in contributions | yes (link) or no | 
+| Repository URL | https://github.com/FEniCS/dolfinx |
+| Main/documentation website | https://fenicsproject.org |
+| Year project was started | FEniCS: 2003 Dolfinx: 2019 |
+| Number of contributors in the past year | 20 contributors in the past year (plus one bot) |
+| Number of contributors in the lifetime of the project | 260 contributors (using `git shortlog -se | wc -l`, 104 shown in the contributors section of the github repository) |
+| Number of distinct affiliations | Looking through contributors on github I identified 5-10 |
+| Where do development discussions take place? | https://fenicsproject.discourse.group or the FEniCS Slack channel |
+| Typical number of emails/comments per week? | The FEniCS discourse group is pretty active with an average of 11 posts per week, most posts get replies |
+| Typical number of commits per week? | about 8 commits per week over the last year|
+| Typical commit size | about 266 lines of code modified on average per commit |
+| How does the project accept contributions? | pull requests |
+| Does the project have an automated test suite? | yes |
+| Does the project use continuous integration? | yes |
+| Are any legal/licensing steps required to contribute? | explain below |
+| Does the project have a policy on LLM use/disclosure in contributions | no | 
 
 ### Install and run
 
@@ -44,6 +43,9 @@ otherwise have concerns about the appropriateness of the software.  If
 the project requires a contributor license agreement or other
 procedural steps, please explain here.  "None at this time" is
 acceptable for this question.
+
+FEniCS/Dolfinx license: GNU Lesser General Public License
+I have no concerns at this time
 
 #### Note on copyright
 Students retain copyright on any work done in completion of a CU
